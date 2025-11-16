@@ -1,0 +1,14 @@
+exports.LogOutPage = class LogOutPage {
+
+constructor(page) {
+    this.page = page;
+    this.logOutMenu = "//button[@id='react-burger-menu-btn']"    
+    this.logOutButton = "//a[@id='logout_sidebar_link']";
+}
+async logout(){
+    await this.page.locator(this.logOutMenu).click(); 
+    await this.page.locator(this.logOutButton).click;
+
+    
+}}
+
